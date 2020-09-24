@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <script src="./src/index.js"></script>
+  </head>
+  <body>
+    Есть два входных массива — тэги `tags` и категории `categories`.
+
+    <div id="first">
+      1. Нужно наполнить переменную `result` итоговым нормализованным массивов
+      данных, чтобы совпало с `resultGolden`.
+
+      <ol>
+        <li>Наполнить категории соответствующими тэгами</li>
+        <li>Не выводить категории без товаров</li>
+      </ol>
+    </div>
+
+    <div js-second>
+      2. Вывести список готовых категорий на странице в формате указанном ниже.
+      Фигурные скобки — места для контента.
+      <xmp>
+        <div class="category">{CATEGORY_TITLE}, #{TAG_TITLE}</div>
+      </xmp>
+    </div>
+
+    <div>
+      3. Вывести данные по заданиям в соответствующие им блоки, а не в конце
+      `body`. Менять можно только JS
+    </div>
+  </body>
+</html>
