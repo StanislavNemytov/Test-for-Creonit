@@ -22,7 +22,6 @@ const createResults = () => {
     ...[...categories].filter((category) => {
       if (category.count) {
         const { tagId } = category;
-        console.log("createResults -> tagId", tagId);
         if (tagId) {
           category.tag = tags.find((tag) => tag.id === tagId);
         }
@@ -34,10 +33,9 @@ const createResults = () => {
 
   result = result.map((category, index) => {
     const newDomElement = categoryDom.cloneNode(true);
-    console.log("createResults -> newDomElement", newDomElement);
-    newDomElement.className = `category category-${category.title}`;
+    newDomElement.className = `category category-${index}`;
     newDomElement.innerHTML = `${category.title}${
-      category.tag ? ", #" + category.tag.title : ''
+      category.tag ? ", #" + category.tag.title : ""
     }`;
 
     return newDomElement;
