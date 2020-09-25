@@ -32,7 +32,7 @@ const createResults = () => {
     })
   );
 
-  result = result.map((category, index) => {
+  const showResult = result.map((category, index) => {
     const newDomElement = categoryDom.cloneNode(true);
     newDomElement.className = `category category-${index}`;
     newDomElement.innerHTML = `${category.title}${
@@ -41,7 +41,7 @@ const createResults = () => {
 
     return newDomElement;
   });
-  xmp.after(...result);
+  xmp.after(...showResult);
 };
 
 createResults();
