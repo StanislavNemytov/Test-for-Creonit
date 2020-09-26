@@ -1,14 +1,14 @@
 const tags = [
   { title: "Крутой", id: 1 },
   { title: "Модный", id: 2 },
-  { title: "Молодёжный", id: 3 }
+  { title: "Молодёжный", id: 3 },
 ];
 const categories = [
   { title: "Кат 1", count: 0, tagId: 1 },
   { title: "Кат 2", count: 5, tagId: 2 },
   { title: "Кат 3", count: 13 },
   { title: "Кат 4", count: 0, tagId: 3 },
-  { title: "Кат 5", count: 2, tagId: 3 }
+  { title: "Кат 5", count: 2, tagId: 3 },
 ];
 
 // Где-то здесь пишем код
@@ -49,7 +49,7 @@ createResults();
 const resultGolden = [
   { title: "Кат 2", count: 5, tag: { title: "Модный", id: 2 } },
   { title: "Кат 3", count: 13 },
-  { title: "Кат 5", count: 2, tag: { title: "Молодёжный", id: 3 } }
+  { title: "Кат 5", count: 2, tag: { title: "Молодёжный", id: 3 } },
 ];
 
 document.body.insertAdjacentHTML(
